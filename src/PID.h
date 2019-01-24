@@ -32,13 +32,14 @@ class PID {
   double TotalError();
 
  private:
+  bool first_update;
   /**
    * PID Errors
    */
   double p_error;
   double i_error;
   double d_error;
-
+  double old_d_error;
   /**
    * PID Coefficients
    */ 
