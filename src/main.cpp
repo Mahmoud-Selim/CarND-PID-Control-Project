@@ -38,7 +38,7 @@ int main() {
   /**
    * Initialize the pid variable.
    */
-  double Kp = 1.0, Kd = 5.5, Ki = 0.001;
+  double Kp = 0.95, Kd = 5.5, Ki = 0.001;
   pid.Init(Kp, Ki, Kd);
   double action = 0;
 
