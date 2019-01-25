@@ -34,6 +34,9 @@ steering between [-1, 1]
 #### 3. Describe how the final hyperparameters were chosen.
 The hyperparameters were tuned manually by observing the car's behaviour.
 
+#### 4. Describe the effects of the P, I, and D components of the PID controller.
+For a digital system, the proportional component decreases the error and drives the system towards minimizing the error between the desired set point and the measured process value -the current state-, but it causes oscillations in a digital system, and that's why we add the derevative component. The D component of the controller dampens the system behaviour and thus reduces oscillations and improves stability. We Also add the Integral component -That is the I component- to eleminate any system bias that could have been introduced to our system, Thus the PID (Proportional, Integral and Derevative) controller.
+
 
 ### Simulation
 The model consists of three modules:
